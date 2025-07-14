@@ -1,0 +1,663 @@
+{
+  "instances": [
+    {
+      "instance_id": "gnb_adult",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "GNB",
+        "combinations": 1,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "adult-census-income",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "adult-census-income",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "adult-census-income",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "adult-census-income"
+      }
+    },
+    {
+      "instance_id": "logreg_adult",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "LogReg",
+        "combinations": 72,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "adult-census-income",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "adult-census-income",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "adult-census-income",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "adult-census-income"
+      }
+    },
+    {
+      "instance_id": "sgdc_adult",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "SGDC",
+        "combinations": 431,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "adult-census-income", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "adult-census-income", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "adult-census-income", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "adult-census-income"
+      }
+    },
+    {
+      "instance_id": "mlpc_adult",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "MLPC",
+        "combinations": 190,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "adult-census-income", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "adult-census-income", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "adult-census-income", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "adult-census-income"
+      }
+    },
+    {
+      "instance_id": "gnb_bank",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "GNB",
+        "combinations": 1,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "bank",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "bank",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "bank",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "bank"
+      }
+    },
+    {
+      "instance_id": "logreg_bank",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "LogReg",
+        "combinations": 72,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "bank",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "bank",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "bank",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "bank"
+      }
+    },
+    {
+      "instance_id": "sgdc_bank",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "SGDC",
+        "combinations": 431,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "bank", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "bank", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "bank", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "bank"
+      }
+    },
+    {
+      "instance_id": "mlpc_bank",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "MLPC",
+        "combinations": 190,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "bank", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "bank", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "bank", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "bank"
+      }
+    },
+    {
+      "instance_id": "gnb_card",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "GNB",
+        "combinations": 1,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "card_fraud",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "card_fraud",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "card_fraud",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "card_fraud"
+      }
+    },
+    {
+      "instance_id": "logreg_card",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "LogReg",
+        "combinations": 72,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "card_fraud",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "card_fraud",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "card_fraud",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "card_fraud"
+      }
+    },
+    {
+      "instance_id": "sgdc_card",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "SGDC",
+        "combinations": 431,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "card_fraud", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "card_fraud", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "card_fraud", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "card_fraud"
+      }
+    },
+    {
+      "instance_id": "mlpc_card",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "MLPC",
+        "combinations": 190,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "card_fraud", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "card_fraud", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "card_fraud", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "card_fraud"
+      }
+    },
+    {
+      "instance_id": "gnb_amazon",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "GNB",
+        "combinations": 1,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "amazon_software_reviews",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "amazon_software_reviews",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "amazon_software_reviews",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "amazon_software_reviews"
+      }
+    },
+    {
+      "instance_id": "logreg_amazon",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "LogReg",
+        "combinations": 72,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "amazon_software_reviews",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "amazon_software_reviews",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "amazon_software_reviews",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "amazon_software_reviews"
+      }
+    },
+    {
+      "instance_id": "sgdc_amazon",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "SGDC",
+        "combinations": 431,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "amazon_software_reviews", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "amazon_software_reviews", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "amazon_software_reviews", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "amazon_software_reviews"
+      }
+    },
+    {
+      "instance_id": "mlpc_amazon",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "MLPC",
+        "combinations": 190,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "amazon_software_reviews", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "amazon_software_reviews", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "amazon_software_reviews", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "amazon_software_reviews"
+      }
+    },
+    {
+      "instance_id": "gnb_breast_cancer",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "GNB",
+        "combinations": 1,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "breast-cancer",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "breast-cancer",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "breast-cancer",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "breast-cancer"
+      }
+    },
+    {
+      "instance_id": "logreg_breast-cancer",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "LogReg",
+        "combinations": 72,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 0,
+          "dataset_name": "breast-cancer",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 1,
+          "dataset_name": "breast-cancer",
+          "splits": 3
+        },
+        {
+          "ip": "127.0.0.1",
+          "port": 8083,
+          "client_id": 2,
+          "dataset_name": "breast-cancer",
+          "splits": 3
+        }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "breast-cancer"
+      }
+    },
+    {
+      "instance_id": "sgdc_breast-cancer",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "SGDC",
+        "combinations": 431,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "breast-cancer", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "breast-cancer", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "breast-cancer", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "breast-cancer"
+      }
+    },
+    {
+      "instance_id": "mlpc_breast-cancer",
+      "server": {
+        "port": 8083,
+        "num_clients": 3,
+        "num_iterations": 150,
+        "force_rounds": 100,
+        "model_type": "MLPC",
+        "combinations": 190,
+        "first_phase_mode": "w",
+        "second_phase_mode": "uw",
+        "lr": 0.0
+
+      },
+      "clients": [
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 0, "dataset_name": "breast-cancer", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 1, "dataset_name": "breast-cancer", "splits": 3 },
+        { "ip": "127.0.0.1", "port": 8083, "client_id": 2, "dataset_name": "breast-cancer", "splits": 3 }
+      ],
+      "nofed_client": {
+        "num_clients": 3,
+        "dataset_name": "breast-cancer"
+      }
+    }
+  ]
+}
