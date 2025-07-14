@@ -184,7 +184,7 @@ def main(config_file):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python multi_instance_orchestrator.py <multi_instance_config.json>")
+        print("Usage: python launcher.py <launcher.json>")
         sys.exit(1)
     config_file = sys.argv[1]
     main(config_file)
