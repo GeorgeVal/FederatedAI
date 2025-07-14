@@ -233,6 +233,14 @@ Use `noFed_client.py` to compare federated learning results with traditional cen
 python3 noFed_client.py --c <num_clients> --d <dataset_name> --fn <folder_name>
 ```
 
+## Automated Testing
+
+Use `launcher.py` to test framework on all datasets and model types by using the provided `launcher.json` or create and use your own json file.
+
+```bash
+python3 launcher.py launcher.json
+```
+
 ## Build Instructions
 
 To build the Cython components:
