@@ -153,7 +153,7 @@ Currently supports:
 ### 2. Start Server
 
 ```bash
-python3 server.py --p <port> --c <num_clients> --m <model_type> --w <weight_mode>
+python3 server.py --p <port> --c <num_clients> --m <model_type> --w <weight_mode> --lr <learning-rate>
 ```
 
 Parameters:
@@ -164,7 +164,7 @@ Parameters:
 - `--i`: Maximum iterations (default: 100)
 - `--f`: Forced rounds (default: 20)
 - `--combs`: Combinations per feature (default: 1)
-
+- `--lr`: Learning rate for residual path (default:0.1)
 ### 3. Start Clients
 
 For each client:
