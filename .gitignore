@@ -1,0 +1,14 @@
+server-client/src/build/*
+server-client/src/Plots/*
+server-client/src/Time/*
+server-client/.idea/*
+server-client/src/CSV/*
+server-client/src/*.so
+server-client/src/__pycache__/*
+server-client/src/fl_cpp_backbone/PythonClientWrapper.cpp
+server-client/src/fl_cpp_backbone/PythonServerWrapper.cpp
+.idea/*
+server-client/src/Temp/*
+server-client/src/Data/heart_disease_preprocessed_*
+server-client/src/Data/*
+!server-client/src/Data/split_data.py
